@@ -1,7 +1,4 @@
-filename=input("enter the filename: ")
-if '.py' in filename:
-    print("python")
-elif ".c"in filename:
-    print("C")
-else :
-    print("this file is other than C and python")
+filename=input("enter full name of file: ")
+f_extns=filename.split('.')
+print('extention that  file uses is: '+repr(f_extns[-1]))
+
